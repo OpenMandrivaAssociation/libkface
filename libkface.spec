@@ -13,6 +13,7 @@ License: GPL
 Group: System/Libraries
 BuildRequires: qt4-devel
 BuildRequires: pkgconfig(opencv)
+BuildRequires: kdelibs4-devel
 Requires: %{libname} = %{EVRD}
 
 %description
