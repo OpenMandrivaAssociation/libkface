@@ -6,6 +6,8 @@
 Name: libkface
 Version: 14.12.2
 Release: 1
+# Sadly, have to carry this over from when libkface was a part of digikam
+Epoch: 4
 Source0: ftp://ftp.kde.org/pub/kde/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
 Summary: Qt wrapper around the libface face recognition and detection library
 URL: http://kde.org/
