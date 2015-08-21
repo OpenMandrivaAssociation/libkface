@@ -4,8 +4,8 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 
 Name: libkface
-Version: 15.04.3
-Release: 2
+Version: 15.08.0
+Release: 1
 # Sadly, have to carry this over from when libkface was a part of digikam
 Epoch: 4
 Source0: ftp://ftp.kde.org/pub/kde/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
@@ -39,7 +39,8 @@ Development files (Headers etc.) for %{name}.
 
 %prep
 %setup -q
-%cmake_kde4
+%cmake_kde4 \
+	-DCMAKE_MINIMUM_REQUIRED_VERSION=3.1
 
 %build
 %make -C build
