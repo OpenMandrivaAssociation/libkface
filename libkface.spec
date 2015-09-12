@@ -5,7 +5,7 @@
 
 Name: libkface
 Version: 15.08.0
-Release: 1
+Release: 2
 # Sadly, have to carry this over from when libkface was a part of digikam
 Epoch: 4
 Source0: ftp://ftp.kde.org/pub/kde/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
