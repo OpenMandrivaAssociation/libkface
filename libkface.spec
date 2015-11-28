@@ -4,7 +4,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 
 Name: libkface
-Version:	15.08.2
+Version:	15.08.3
 Release:	1
 # Sadly, have to carry this over from when libkface was a part of digikam
 Epoch: 4
