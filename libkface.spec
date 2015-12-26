@@ -10,6 +10,7 @@ Release:	1
 # Sadly, have to carry this over from when libkface was a part of digikam
 Epoch:		4
 Source0:	http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
+Source1:	%{name}.rpmlintrc
 URL:		http://kde.org/
 License:	GPL
 Group:		System/Libraries
