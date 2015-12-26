@@ -54,7 +54,7 @@ Development files (Headers etc.) for %{name}.
 %ninja_install -C build
 
 %files
-%{_datadir}/apps/%{name}
+%{_datadir}/%{name}
 
 %files -n %{libname}
 %{_libdir}/libKF5KFace.so.%{major}*
