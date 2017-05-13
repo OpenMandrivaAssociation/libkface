@@ -46,7 +46,7 @@ Development files (Headers etc.) for %{name}.
 
 %prep
 %setup -q
-%cmake_kde5
+%cmake_kde5 -DENABLE_OPENCV3=1
 
 %build
 %ninja -C build
