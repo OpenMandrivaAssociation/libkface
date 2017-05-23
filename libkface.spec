@@ -46,6 +46,11 @@ Development files (Headers etc.) for %{name}.
 
 %prep
 %setup -q
+#(tpg) clang have some issues
+# ../src/recognition-opencv-lbph/facerec_borrowed.h:144:112: error: only virtual member functions can be marked 'override'
+export CC=gcc
+export CXX=g++
+
 %cmake_kde5 -DENABLE_OPENCV3=1
 
 %build
