@@ -1,4 +1,2 @@
-removed_sources:
-  libkface-15.08.0.tar.xz: d33f13ca5828de2b4cf90b3a73107f4c2d9913f0
 sources:
-  libkface-17.04.0.tar.xz: 3e867a97a8ea0cfe7e9384ee12ad26a0b717dd91
+  libkface-17.04.2.tar.xz: a86b7684c08872b03619c0c470ac9cf0f9b66ccf

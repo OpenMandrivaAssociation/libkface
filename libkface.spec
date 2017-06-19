@@ -5,12 +5,13 @@
 
 Summary:	Qt wrapper around the libface face recognition and detection library
 Name:		libkface
-Version:	17.04.0
-Release:	2
+Version:	17.04.2
+Release:	1
 # Sadly, have to carry this over from when libkface was a part of digikam
 Epoch:		4
 Source0:	http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
 Source1:	%{name}.rpmlintrc
+Patch0:		libkface-17.04.2-compile.patch
 URL:		http://kde.org/
 License:	GPL
 Group:		System/Libraries
@@ -46,10 +47,7 @@ Development files (Headers etc.) for %{name}.
 
 %prep
 %setup -q
-#(tpg) clang have some issues
-# ../src/recognition-opencv-lbph/facerec_borrowed.h:144:112: error: only virtual member functions can be marked 'override'
-export CC=gcc
-export CXX=g++
+%apply_patches
 
 %cmake_kde5 -DENABLE_OPENCV3=1
 
