@@ -6,7 +6,7 @@
 Summary:	Qt wrapper around the libface face recognition and detection library
 Name:		libkface
 Version:	17.08.3
-Release:	1
+Release:	2
 # Sadly, have to carry this over from when libkface was a part of digikam
 Epoch:		4
 Source0:	http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
