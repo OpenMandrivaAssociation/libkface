@@ -12,7 +12,7 @@ Epoch:		4
 Source0:	http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
 Source1:	%{name}.rpmlintrc
 Patch0:		libkface-17.04.2-compile.patch
-URL:		http://kde.org/
+URL:		https://kde.org/
 License:	GPL
 Group:		System/Libraries
 BuildRequires:	cmake(ECM)
